@@ -163,9 +163,9 @@ public class LeadsPageStepDefinitions extends TestBase {
 	@Then("^I should verify leads information$")
 	public void i_should_verify_leads_information() throws Throwable {
 		Assert.assertTrue(leadsVerificationPage.getFirstName().getText().contains(LeadsData.getFirstName()));
-		Assert.assertEquals(leadsVerificationPage.getLastName().getText(), LeadsData.getLastName());
-		Assert.assertEquals(leadsVerificationPage.getStreetAddress(), LeadsData.getStreetAdress());
-		Assert.assertEquals(leadsVerificationPage.getEmail(), LeadsData.getEmail());
+		Assert.assertTrue(leadsVerificationPage.getLastName().getText().contains(LeadsData.getLastName()));
+		Assert.assertTrue(leadsVerificationPage.getStreetAddress().getText().contains(LeadsData.getStreetAdress()));
+		Assert.assertTrue(leadsVerificationPage.getEmail().getText().contains(LeadsData.getEmail()));
 	}
 
 }

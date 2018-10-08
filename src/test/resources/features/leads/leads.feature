@@ -3,7 +3,7 @@ Feature: Leads Creation
   As a Test Engineer I want to test Leads Creation functionality.
 
   Background: User should be on Home page
-    Given I am on the Login page URL "http://172.16.124.209:8888/index.php?"
+    Given I am on the Login page URL "http://localhost:8888/index.php?"
     When I enter username as "admin"
     And I enter password as "password"
     And click on login button

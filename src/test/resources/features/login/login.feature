@@ -5,7 +5,7 @@ Feature: Sign In
   In order to use the application features.
 
   Background: User navigates to Application URL
-    Given I am on the Login page URL "http://172.16.124.209:8888/index.php?"
+    Given I am on the Login page URL "http://localhost:8888/index.php?"
     Then I should see Log In Page
 
    @sanity
